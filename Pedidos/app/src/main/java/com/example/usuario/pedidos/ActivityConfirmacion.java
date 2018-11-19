@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -57,8 +58,8 @@ public class ActivityConfirmacion extends AppCompatActivity {
                 notificationHelper.notify("Su pizza esta en proceso", "PEDIDO");
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -68,8 +69,8 @@ public class ActivityConfirmacion extends AppCompatActivity {
                 notificationHelper.notify("Se ha cancelado su pizza, intentalo mas tarde", "ALERTA");
 
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -95,5 +96,17 @@ public class ActivityConfirmacion extends AppCompatActivity {
         }
 
         return  precio;
+    }
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            Intent intent= new Intent (getApplicationContext(), MainActivity.class);
+            startActivity(intent);
+            finish();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }

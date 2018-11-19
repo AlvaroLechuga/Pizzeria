@@ -78,8 +78,8 @@ public class ActivityRealizarFavorita extends AppCompatActivity {
                 editor.putBoolean("insertado", true);
                 editor.commit();
                 Intent intent = new Intent(getApplicationContext(), ActivityOpciones.class);
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
     }

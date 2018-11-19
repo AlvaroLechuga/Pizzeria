@@ -54,8 +54,8 @@ public class ActivityPizzaPredeterminada extends AppCompatActivity {
                 intent.putExtra("dimensionPizza", dimensionPizza);
                 intent.putExtra("masaPizza", masaPizza);
                 intent.putExtra("ingredientes", pizzas.get(position).toString());
-                finish();
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -65,8 +65,8 @@ public class ActivityPizzaPredeterminada extends AppCompatActivity {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent intent= new Intent (getApplicationContext(), MainActivity.class);
-            finish();
             startActivity(intent);
+            finish();
             return true;
         }
         return super.onKeyDown(keyCode, event);

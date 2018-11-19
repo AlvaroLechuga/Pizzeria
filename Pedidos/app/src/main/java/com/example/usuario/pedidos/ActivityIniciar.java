@@ -51,8 +51,8 @@ public class ActivityIniciar extends AppCompatActivity {
                     editor.putBoolean("marcado", true);
                     editor.commit();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    finish();
                     startActivity(intent);
+                    finish();
                 }else{
                     SharedPreferences prefs = getSharedPreferences("MisPreferencias",Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = prefs.edit();
@@ -61,8 +61,8 @@ public class ActivityIniciar extends AppCompatActivity {
                     editor.putBoolean("marcado", false);
                     editor.commit();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    finish();
                     startActivity(intent);
+                    finish();
                 }
 
             }

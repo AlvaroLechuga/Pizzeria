@@ -30,8 +30,8 @@ public class ActivityPedido extends AppCompatActivity {
             public void onClick(View v) {
                 Intent cambioActivity = new Intent(getApplicationContext(), ActivityDimensionesPizza.class);
                 cambioActivity.putExtra("seleccionPizza", "personalizada");
-                finish();
                 startActivity(cambioActivity);
+                finish();
             }
         });
 
@@ -40,8 +40,8 @@ public class ActivityPedido extends AppCompatActivity {
             public void onClick(View v) {
                 Intent cambioActivity = new Intent(getApplicationContext(), ActivityDimensionesPizza.class);
                 cambioActivity.putExtra("seleccionPizza", "predeterminada");
-                finish();
                 startActivity(cambioActivity);
+                finish();
             }
         });
 
@@ -58,8 +58,8 @@ public class ActivityPedido extends AppCompatActivity {
                     Intent cambioActivity = new Intent(getApplicationContext(), ActivityDimensionesPizza.class);
                     cambioActivity.putExtra("seleccionPizza", "favorita");
                     cambioActivity.putExtra("ingredientes", ingredientes);
-                    finish();
                     startActivity(cambioActivity);
+                    finish();
                 }
 
 

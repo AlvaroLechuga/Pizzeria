@@ -86,8 +86,9 @@ public class ActivityPizzaPersonalizada extends AppCompatActivity {
                 intent.putExtra("dimensionPizza", dimensionPizza);
                 intent.putExtra("masaPizza", masaPizza);
                 intent.putExtra("ingredientes", ingredientes);
-                finish();
                 startActivity(intent);
+                finish();
+                finish();
 
             }
         });
@@ -97,8 +98,8 @@ public class ActivityPizzaPersonalizada extends AppCompatActivity {
 
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             Intent intent= new Intent (getApplicationContext(), MainActivity.class);
-            finish();
             startActivity(intent);
+            finish();
             return true;
         }
         return super.onKeyDown(keyCode, event);
