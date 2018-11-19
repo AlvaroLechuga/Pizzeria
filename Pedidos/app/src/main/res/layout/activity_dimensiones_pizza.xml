@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ActivityDimensionesPizza">
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Siguiente"
+        android:textColor="#FFFFFF" />
+
+    <RadioGroup
+        android:id="@+id/rgDimensionesPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="108dp">
+
+        <RadioButton
+            android:id="@+id/rdPeque"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_toStartOf="@+id/rgDimensionesPizza"
+            android:layout_weight="1"
+            android:text="Pequeña"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdMediana"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Madiana"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdFamiliar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Familiar"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdMedio"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Medio-Metro"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:text="Selecciona el tamaño y masa"
+        android:textColor="#FFFF"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/rgMasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rgDimensionesPizza"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp">
+
+        <RadioButton
+            android:id="@+id/rbFina"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Masa Fina"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbGorda"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Masa Gorda"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbTradicional"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Tradicional"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbTradicionalRellena"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Tradicional Rellena"
+            android:textColor="#FFFF"
+            tools:textSize="18sp" />
+    </RadioGroup>
+
+</RelativeLayout>

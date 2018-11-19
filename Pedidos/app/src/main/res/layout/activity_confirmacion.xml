@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ActivityConfirmacion">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:background="@android:color/holo_red_dark">
+
+        <TextView
+            android:id="@+id/txTicket"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirmar_Pedido"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="#FFFF"
+        android:text="Confirmar" />
+
+    <Button
+        android:id="@+id/btnRechazar_Pedido"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/btnConfirmar_Pedido"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Rechazar"
+        android:textColor="#FFFF" />
+</RelativeLayout>

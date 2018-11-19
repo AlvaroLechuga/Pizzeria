@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ActivityPizzaPersonalizada">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Elige los ingredientes de la Pizza"
+        android:textColor="#FFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConfirmar_Pedido"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Confirmacion"
+        android:textColor="#FFFFFF" />
+
+    <CheckBox
+        android:id="@+id/cbQueso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="151dp"
+        android:text="Queso"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        tools:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbCebolla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cbQueso"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="33dp"
+        android:text="Cebolla"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbTomate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cbQueso"
+        android:layout_centerHorizontal="true"
+        android:text="Tomate"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbPollo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbQueso"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="219dp"
+        android:text="Pollo"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbMaiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbCebolla"
+        android:layout_alignBottom="@+id/cbPollo"
+        android:text="Maiz"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbTernera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cbTomate"
+        android:layout_alignBottom="@+id/cbPollo"
+        android:text="Ternera"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbPimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbQueso"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="282dp"
+        android:layout_marginBottom="300dp"
+        android:text="Pimiento"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbAtun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbTomate"
+        android:layout_alignTop="@+id/cbPimiento"
+        android:text="Atun"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/cbBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cbCebolla"
+        android:layout_alignBottom="@+id/cbPimiento"
+        android:text="Bacon"
+        android:textColor="#FFFFFF"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnWeb"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="119dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="WEB"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnOpciones"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Opciones"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnPedido"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="PEDIDO"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

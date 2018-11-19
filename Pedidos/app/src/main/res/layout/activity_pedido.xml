@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ActivityPedido">
+
+    <Button
+        android:id="@+id/btnFavorita"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Favorita"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnPredeterminada"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="99dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Predeterminada"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnPersonalizada"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Personalizada"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usuario.pedidos">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ActivityOpciones" />
+        <activity android:name=".ActivityPedido" />
+        <activity android:name=".ActivityPizzaPersonalizada" />
+        <activity android:name=".ActivityDimensionesPizza" />
+        <activity android:name=".ActivityPizzaPredeterminada" />
+        <activity android:name=".ActivityIniciar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityRealizarFavorita" />
+        <activity android:name=".ActivityConfirmacion" />
+        <activity android:name=".ActivityAdicional"></activity>
+    </application>
+
+</manifest>

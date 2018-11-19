@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".ActivityIniciar">
+
+    <TextView
+        android:id="@+id/IniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:text="Inicia Sesion"
+        android:textColor="#FFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="177dp"
+        android:text="Nombre"
+        android:textColor="#FFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/iniciarSesion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="261dp"
+        android:text="Contraseña"
+        android:textColor="#FFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnIniciar"
+        android:layout_width="215dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#02A807"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="Iniciar Sesion"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Nombre"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="-1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFF"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+    <EditText
+        android:id="@+id/txtPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iniciarSesion2"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="-1dp"
+        android:layout_toEndOf="@+id/iniciarSesion2"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#FFFF"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+    <CheckBox
+        android:id="@+id/cbRecordar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="177dp"
+        android:text="Recordar"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/holo_red_dark" />
+
+</RelativeLayout>
